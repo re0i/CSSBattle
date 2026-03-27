@@ -1,0 +1,55 @@
+<!-- LINK: https://cssbattle.dev/play/XrZWUyRrxmJ7J8uh21xD -->
+
+<div class="container">
+    <div class="x"></div>
+    <div class="shape"></div>
+    <div class="shape y"></div>
+    <div class="z"></div>
+</div>
+<style>
+    body {
+        background: #F3EAD2;
+        height: 95vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 7px;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+        height: 300px;
+        position: relative;
+    }
+
+    .shape {
+        width: 40px;
+        height: 180px;
+        background: #C36768;
+    }
+
+    .y {
+        transform: rotate(90deg);
+        position: absolute;
+    }
+
+    .x {
+        background: #38483C;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .z {
+        background: #38483C;
+        width: 40px;
+        height: 40px;
+        box-shadow: 0 220px #38483C, 110px 110px #38483C, -110px 110px #38483C;
+        position: absolute;
+        top: 20px;
+    }
+</style>

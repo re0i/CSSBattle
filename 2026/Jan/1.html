@@ -1,0 +1,46 @@
+<!-- LINK: https://cssbattle.dev/play/2KupYkcntZudnUXHlLq1 -->
+
+<div class="c"></div>
+<div class="c"></div>
+
+<style>
+    body {
+        background: #F7CB71;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        gap: 20px;
+    }
+
+    .c {
+        width: 140px;
+        height: 140px;
+        position: relative;
+        transform: rotate(45deg);
+        overflow: visible;
+    }
+
+    .c::after, .c::before {
+        content: '';
+        position: absolute;
+        background-color: #7C3219;
+    }
+
+    .c::before {
+        height: 40px;
+        width: 60px;
+        top: 50px;
+        left: -10px;
+        box-shadow: 100px 0px #7C3219;
+    }
+
+    .c::after {
+        height: 60px;
+        width: 40px;
+        bottom: -10px;
+        right: 50px;
+        box-shadow: 0px -100px #7C3219;
+    }
+</style>
