@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- lINK: https://cssbattle.dev/play/Ucqd5CzqKg0HxnF5cW2z -->
 
 <div class="container">
@@ -46,4 +47,52 @@
     .box.bottom::after{
         bottom: 15px;
     }
+=======
+<div class="container">
+    <div class="box bottom"></div>
+    <div class="box top"></div>
+    <div class="box bottom"></div>
+    <div class="box top"></div>
+</div>
+
+<style>
+    body {
+        background: #4A9A86;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 95vh;
+    }
+
+    .container {
+        display: flex;
+        gap: 20px;
+    }
+
+    .box {
+        width: 60px;
+        height: 100px;
+        border: 10px solid #FAE29E;
+        position: relative;
+    }
+
+    .box::after {
+        content: '';
+        width: 30px;
+        height: 30px;
+        background: #FAE29E;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .box.top::after{
+        top: 15px;
+    }
+    
+    .box.bottom::after{
+        bottom: 15px;
+    }
+>>>>>>> e92bb82494cac7ba3fba36c1c13cfadf62b7c235
 </style>
