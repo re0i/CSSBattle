@@ -1,0 +1,65 @@
+<!-- LINK: https://cssbattle.dev/play/m90z6ArWKRiIEzasM2kJ -->
+
+<div class="container">
+    <div class="box"></div>
+    <div class="circle"></div>
+</div>
+
+<style>
+    body {
+        background: #F4DA64;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .box {
+        background: #E25C57;
+        width: 60px;
+        height: 60px;
+        position: relative;
+    }
+
+    .box::before, .box::after {
+        content: '';
+        width: 62px;
+        height: 20px;
+        background: #E25C57;
+        position: absolute;
+        top: -45px;
+    }
+
+    .box::before {
+        transform: rotate(45deg);
+        left: -65px;
+        box-shadow: 180px 0 0 #E25C57;
+    }
+
+    .box::after {
+        transform: rotate(-45deg);
+        right: -65px;
+        box-shadow: -180px 0 0 #E25C57;
+    }
+
+    .circle {
+        background: #E25C57;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 45px;
+        box-shadow: 0 180px 0 #E25C57,
+                    -90px 90px 0 #E25C57,
+                    90px 90px 0 #E25C57;
+    }
+</style>
