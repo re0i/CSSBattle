@@ -1,0 +1,57 @@
+<!-- LINK: https://cssbattle.dev/play/8cVtvhpdnVUSsC118WZh -->
+
+<div class="container">
+    <div class="box"></div>
+    <div class="circle"></div>
+</div>
+
+<style>
+    body {
+        background: #45B45B;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .box {
+        width: 50px;
+        height: 50px;
+        background: #194247;
+        position: absolute;
+        top: 30px;
+        left: 12px;
+        box-shadow: 0 190px 0 #194247,
+                    310px 0 0 #194247,
+                    310px 190px 0 #194247;
+    }
+
+    .box::before, .box::after {
+        content: '';
+        background: #194247;
+        width: 50px;
+        position: absolute;
+    }
+
+    .box::before {
+        height: 50px;
+        border-radius: 50%;
+        position: absolute;
+        left: 155px;
+    }
+
+    .box::after {
+        height: 120px;
+        top: 60px;
+        box-shadow: 310px 0 0 #194247;
+    }
+</style>
