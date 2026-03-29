@@ -1,0 +1,54 @@
+<!-- LINK: https://cssbattle.dev/play/hvq7iWY2n3YgoSQGHn0Y -->
+
+<div class="container">
+    <div class="car"></div>
+</div>
+
+<style>
+    body {
+        background: #4FA9C0;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .car {
+        background: #F4DA64;
+        width: 280px;
+        height: 80px;
+        position: absolute;
+        bottom: 70px;
+    }
+
+    .car::before {
+        content: '';
+        background: #F4DA64;
+        width: 160px;
+        height: 80px;
+        position: absolute;
+        top: -80px;
+        right: 30px;
+    }
+
+    .car::after {
+        content: '';
+        background: #2B2A4A;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 30px;
+        box-shadow: 160px 0 0 #2B2A4A;
+    }
+</style>

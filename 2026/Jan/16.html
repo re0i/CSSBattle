@@ -1,0 +1,56 @@
+<!-- LINK: https://cssbattle.dev/play/BcfBYpWBbOLfQFhYVW34 -->
+
+<div class="container">
+    <div class="box"></div>
+</div>
+
+<style>
+    body {
+        background: #0F3A22;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .box {
+        background: #289C5B;
+        width: 210px;
+        height: 60px;
+        position: absolute;
+        top: 60px;
+    }
+
+    .box::before, .box::after {
+        content: '';
+        position: absolute;
+    }
+
+    .box::before {
+        width: 60px;
+        height: 60px;
+        background: #FBFAE2;
+        top: 120px;
+        box-shadow: 75px 0 0 #FBFAE2,
+                    150px 0 0 #FBFAE2;
+    }
+
+    .box::after {
+        width: 100px;
+        height: 100px;
+        background: #0F3A22;
+        border-radius: 50%;
+        top: 65%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+</style>
