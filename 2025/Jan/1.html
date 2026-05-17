@@ -1,0 +1,48 @@
+<!-- LINK: https://cssbattle.dev/play/ET4DvCn6RpYnP3VBgRlS -->
+
+<div class="container">
+    <div class="shape"></div>
+</div>
+
+<style>
+    body {
+        background: #3F9461;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .shape {
+        background: #fff;
+        width: 40px;
+        height: 180px;
+        position: absolute;
+        left: 32px;
+        box-shadow: 80px 0 0 0 #fff,
+                    160.5px 0 0 0 #fff,
+                    240.5px 0 0 0 #fff;
+    }
+
+    .shape::after {
+        content: '';
+        background: #fff;
+        width: 41px;
+        height: 40px;
+        position: absolute;
+        top: 69px;
+        left: 40px;
+        box-shadow: 80px -69px 0 0 #fff,   /* Set to `79px -69.6px 0 0 #fff` on CSS Battle */
+                    160px 71px 0 0 #fff,
+                    240px 0 0 0 #fff;
+    }
+</style>
