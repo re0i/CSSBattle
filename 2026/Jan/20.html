@@ -1,0 +1,64 @@
+<!-- LINK: https://cssbattle.dev/play/sE7r0bPnmHOiAZqsWFIs -->
+
+<div class="container">
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+</div>
+
+<style>
+    body {
+        background: #FEF6E2;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .shape1 {
+        background: #AC342E;
+        height: 300px;
+        width: 20px;
+        box-shadow: 50px 0 0 0 #AC342E,
+                    -50px 0 0 0 #AC342E;
+    }
+
+    .shape1::after {
+        content: '';
+        background: #AC342E;
+        height: 20px;
+        width: 410px;
+        box-shadow: 0 50px 0 0 #AC342E,
+                    0 -50px 0 0 #AC342E;
+        position: absolute;
+        top: 140px;
+        right: -10px;
+    }
+
+    .shape2 {
+        background: #FEF6E2;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+    .shape2::after {
+        content: '';
+        background: #AC342E;
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+</style>

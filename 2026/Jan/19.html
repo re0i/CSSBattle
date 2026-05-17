@@ -1,0 +1,68 @@
+<!-- LINK: https://cssbattle.dev/play/bCMIdSPnf1z5Gl8Cuq7z -->
+
+<div class="container">
+    <div class="shape1"></div>
+    <div class="shape2"></div>
+</div>
+
+<style>
+    body {
+        background: #DE9473;
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .shape1 {
+        background: #DE9473;
+        width: 160px;
+        height: 80px;
+        margin: 70px 1.3px;
+        border: 30px solid #F9EAF1;
+        background: conic-gradient(
+            at 80px 25px,
+            #0000 75%,
+            #394257 0
+        ) 0 0 / 240px 55px;
+        mask: linear-gradient(
+            90deg,
+            red 140px,
+            transparent 0 240px,
+            red 0
+        );
+        position: absolute;
+        left: 0;
+    }
+
+    .shape2 {
+        background: #DE9473;
+        width: 160px;
+        height: 80px;
+        margin: 70px 1px;
+        border: 30px solid #F9EAF1;
+        background: conic-gradient(
+            at 78px 25px,
+            #0000 75%,
+            #394257 0
+        ) 0 0 / 240px 55px;
+        mask: linear-gradient(
+            90deg,
+            red 140px,
+            transparent 0 245px,
+            red 0
+        );
+        position: absolute;
+        right: 0;
+        transform: scaleX(-1) scaleY(-1);
+    }
+</style>
