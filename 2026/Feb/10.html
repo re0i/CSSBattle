@@ -1,0 +1,51 @@
+<!-- LINK: https://cssbattle.dev/play/V1lvuRyEGgnmtGjnfZ5v -->
+
+<div class="container">
+    <div class="shape"></div>
+</div>
+
+<style>
+    body {
+        background: #F6E49C;
+        height: 95vh;
+    }
+
+    .container {
+        width: 400px;
+        height: 300px;
+        position: relative;
+    }
+
+    body, .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .shape {
+        background: #2F5C24;
+        height: 80px;
+        width: 220px;
+    }
+
+    .shape::before {
+        border-radius: 100% 0 100% 0;
+        left: 310px;  /* Set to 302 o CSS Battle */
+        box-shadow: -300px 160px 0 0 #2F5C24;
+    }
+
+    .shape::after {
+        border-radius: 0 100% 0 100%;
+        left: 10px;  /* Set to 2 on CSS Battle */
+        box-shadow: 300px 160px 0 0 #2F5C24;
+    }
+
+    .shape::before, .shape::after {
+        content: '';
+        background: #2F5C24;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        top: 30px;
+    }
+</style>
